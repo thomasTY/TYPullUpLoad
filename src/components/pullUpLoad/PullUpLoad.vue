@@ -106,6 +106,10 @@ export default {
           that.loadState = 0
           clearTimeout(that.loadingTimer)
           that.loadingTimer = null
+          window.onscroll = null // 清空onscroll，防止因为load-more-box的展示和隐藏造成滚动，从而造成死onscroll循环
+          setTimeout(function () {
+            that.listenScroll()
+          }, 10)
         }, this.loadStateTime)
       }
     },
