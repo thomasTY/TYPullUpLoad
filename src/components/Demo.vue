@@ -4,8 +4,9 @@
       TYPullUpLoad
     </div>
     <div class="tip">
-      基于vue封装的上拉刷新组件，使用时为state每次赋值，要赋一个数组，数组第一个元素为实际state，第二个元素为new Date
-      ，以标志变动，例如：[1, new Date()]
+      1. 基于vue封装的上拉刷新组件，使用时为state每次赋值，要赋一个数组，数组第一个元素为实际state，第二个元素为new Date
+      ，以标志变动，例如：[1, new Date()] <br>
+      2. 在微信中，PullUpLoad会默认减去微信导航条高度，iOS为64px，Android为72px
     </div>
     <div v-for="(item, index) in list" class="item">
       {{item}}
@@ -66,6 +67,7 @@ export default {
   background-color: rgb(215, 215, 215);
 }
 .tip {
+  text-align:left;
   background-color: rgb(215, 215, 215);
 }
 .item {
