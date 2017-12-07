@@ -1,6 +1,10 @@
-# ty_pull_up_load
+# TYPullUpLoad
 
-> A Vue.js project
+> 基于vue封装的上拉刷新组件
+
+## Demo地址
+
+[https://thomasty.github.io/TYPullUpLoad/dist/#/](https://thomasty.github.io/TYPullUpLoad/dist/#/)
 
 ## Build Setup
 
